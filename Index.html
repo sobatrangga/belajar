@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Bikin Website</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="img/patrik.png" alt="" class="logo-img">
+            <h1 class="logo">Patrick</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobi">Hobi</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta"> <a href="mailto:ranggalesmana017@gmail.com">Contact</a></button>
+    </header>
+
+    <div class="container">
+        <div class="intro" id="about">
+            <p class="title">Hello, i am patrick</p>
+            <p class="description">From Bikini Bottom</p>
+            <img src="img/patrik.png" alt="patrick" class="img-photo">
+        </div>
+    </div>
+
+    <div class="parallax">
+        <div class="tentang">
+            <p class="title">Saya adalah pemain film</p>
+            <p class="description">film saya adalah the patrick show</p>
+            <div class="mt-10">
+                <button class="btn-cta" onclick="play()">Nonton</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card" id="hobi">
+                <div class="card-items">
+                    <i class="bi bi-laptop icon-size"></i>
+                    <p class="card-title">Nonton patrick</p>
+                    <p class="card-description">karena dapat menghibur kamu</p>
+                </div>
+                <div class="card-items">
+                    <i class="bi bi-laptop icon-size"></i>
+                    <p class="card-title">Berkata bijak</p>
+                    <p class="card-description">Berkata bijak adalah jalan ninjaku</p>
+                </div>
+                <div class="card-items">
+                    <i class="bi bi-laptop icon-size"></i>
+                    <p class="card-title">Diam kaya patrick</p>
+                    <p class="card-description">Diam seperti patrcik tiba" jadi turunan raja dan penuh kejutan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="title">&copy; sobatrangga</p>
+    </footer>
+
+    <script>
+        function play(){
+            window.location.href = 'https://www.youtube.com/results?search_query=patrick+star';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    display: flex;
+    gap: 0;
+}
+
+.logo-img{
+    width: 32px;
+    height: 32px;
+}
+
+header{
+    background-color: crimson;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    display: flex;
+    padding: 16px;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+} 
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button a {
+    color: black;
+}
+
+li a{
+    transition: all .5 ease 0s;
+    display: inline-block;
+}
+
+li a:hover{
+    color: black;
+    transform: rotate(2deg);
+}
+
+.logo{
+    margin-right: auto;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .5 ease 0s;
+}
+
+.logo:hover{
+    color: black;
+    transform: rotate(2deg);
+}
+
+.btn-cta{
+    margin-right: 20px;
+    padding: 12px 24px;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-cta:hover{
+    color: crimson;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.title{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.description{
+    font-size: 1.5em;
+}
+.img-photo{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    background-image: url('img/patrik.png');
+}
+
+.tentang{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: crimson;
+    color: white;
+}
+
+.mt-10{
+    margin-top: 32px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-items{
+    text-align: center;
+    width: 25%;
+    padding: 32px;
+    border-radius: 16px;
+    background: #f7f7f7;
+    color: black;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.05);
+    opacity: .8;
+}
+
+.card-title{
+    font-size: 2em;
+    font-weight: 800;
+    margin : 10px 0;
+}
+
+.card-description{
+    font-size: 1em;
+}
+
+.icon-size{
+    font-size: 2em;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: crimson;
+    color: white;
+}
+
+/* Media */
+@media screen and (max-width: 568px) {
+    .card{
+        flex-direction: column;
+        gap: 8px;
+    }
+    .card-items{
+        width: 100%;
+    }
+    .img-photo{
+        max-width: 100%;
+    }
+    nav{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        background-color: crimson;
+        z-index: 9;
+        padding: 0;
+    }
+    footer{
+        margin-bottom: 70px;
+    }
+}
